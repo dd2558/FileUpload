@@ -21,7 +21,7 @@
 </head>
 <body>
 	<h3>파일 업로드</h3>
-	<span style="color:red;">${errorMessage} }</span>
+	<span style="color:red;">${errorMessage} </span>
 	<form name="fileForm" method="post" enctype="multipart/form-data" action="UploadProccess.do"
 	onsubmit ="return validateForm(this);"></form>
 	제목 <input type="text" name="title"/> <br>

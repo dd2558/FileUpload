@@ -15,7 +15,7 @@ public class FileUtil {
 		Part part = req.getPart("ofile");
 		String partHeader = part.getHeader("content-disposition");
 		String[] phArr = partHeader.split("filename=");
-		String originalFileName = phArr[1].trim().replace("|", "");
+		String originalFileName = phArr[1].trim().replace("\"", "");
 		if(!originalFileName.isEmpty()) {
 			part.write(sDirectory+File.separator+originalFileName);
 		}
