@@ -1,5 +1,7 @@
 package fileupload;
 
+import common.DBConnPool;
+
 public class MyFileDAO extends DBConnPool{
 
    //새로운 게시물 입력합니다.
